@@ -1,0 +1,12 @@
+<h2>Todo List</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae sed cupiditate consectetur fuga perferendis quam consequatur. Vero optio quidem assumenda placeat molestias, aliquam modi labore nihil dolorem. Incidunt, eaque cupiditate!</p>
+
+<ul class="list-group">
+  <li *ngFor="let todo of todos" class="list-group-item">
+    <todo-item [todo]="todo" (save)="editTodo($event)"></todo-item>
+  </li>
+  <li class="list-group-item">
+    <todo-item isNew="true" (save)="createTodo($event)"></todo-item>
+  </li>
+</ul>
