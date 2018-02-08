@@ -12,7 +12,6 @@ import { AboutComponent } from './about/about.component';
 import { TodoItemComponent } from './todo-list/todo-item/todo-item.component';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
-import { TodoNewComponent } from './todo-list/todo-new/todo-new.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +19,7 @@ import { TodoNewComponent } from './todo-list/todo-new/todo-new.component';
     TodoListComponent,
     HomeComponent,
     AboutComponent,
-    TodoItemComponent,
-    TodoNewComponent
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,

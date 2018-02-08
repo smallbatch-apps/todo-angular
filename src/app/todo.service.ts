@@ -5,7 +5,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class TodoService {
-  private todoApi = 'http://todo-api.dev/todos';
+  private todoApi = 'http://todo-api.test/todos';
   constructor(private http: Http) { }
 
   async getTodos(): Promise<Todo[]> {
